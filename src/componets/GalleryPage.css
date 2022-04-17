@@ -1,0 +1,35 @@
+.gallery_first,.gallery_secand,.gallery_thrd{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 16px;
+}
+.image_first{
+    display: flex;
+    flex:65;
+    height:450px;
+    padding:8px;
+}
+ 
+.image_secand {
+    display: flex;
+    flex:35;
+    height:450px;
+    padding: 4px;
+
+}
+.image_secand3 {
+    display: flex;
+    height:450px;
+    padding:8px;
+
+}
+.of{
+    color: white;
+    margin: 100px;
+    font-size:30px;
+    border-radius: 50px;
+    background-color:grey;
+    padding: 30px;
+    
+}

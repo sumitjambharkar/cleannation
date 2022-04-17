@@ -1,0 +1,30 @@
+.tag{
+    color:blue;
+    position: relative;
+    text-transform: uppercase;
+    animation-name: ankesh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes ankesh {
+0%{
+    width: 95%;
+}
+50%{
+    width: 100%;
+}
+100%{
+    width: 95%;
+}
+}
+.ss{
+    color:red;
+}
+
+.soon{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+
+}

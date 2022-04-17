@@ -1,0 +1,26 @@
+.banner{
+    background-image: url(../image/baner.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:top;
+    height:100vh;
+    position:relative;
+}
+/* .title {
+    font-size:2rem;
+    width: 22rem;
+    top: 22rem;
+    left: 14rem;
+    position:absolute;
+    color: white;
+} */
+/* @media screen and (max-width:780px) {
+    .title{
+        font-size:2rem;
+        width: 22rem;
+        top:16rem;
+        left:6rem;
+        position:absolute;
+        color: white;
+    }
+} */

@@ -1,0 +1,67 @@
+.header{
+    background-color:orange;
+}
+.input {
+    width:16rem;
+    height: 2.2rem;
+    border-radius: 24px 0 0 24px;
+    padding:12px;
+}
+.input:focus{
+    outline: none;
+}
+.button{
+    width:5.5rem;
+    height: 2.2rem;
+    background-color:black;
+    color:white;
+
+}
+.logo::before {
+    content:"CLEANNATION.IN";
+    position: absolute;
+    top: 4;
+    left: 0;
+    width:100%;
+    color: red;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+.font_size {
+    font-size:2.5rem;
+}
+@keyframes logo{
+    0%{
+      width: 0%;  
+      color:blue;
+    }
+    50%{
+        width: 100%; 
+        color:red;
+      }
+    100%{
+        width: 0%; 
+        color:green; 
+      }
+}
+
+@media screen and (max-width:780px) {
+    .input {
+        width: 8rem;
+        height: 1.2rem;
+        border-radius: 24px 0 0 24px;
+        padding: 14px;
+    }
+    .button {
+        width: 4.5rem;
+        height: 1.8rem;
+        background-color: black;
+        color: white;
+    }
+    .font_size {
+        font-size:1.5rem;
+    }
+
+}
