@@ -6,13 +6,15 @@
     justify-content: center;
     justify-items: center;
     border-radius: 50%;
+    width: 50%;
 }
 .box{
     display: flex;
     justify-items: center;
     align-items: center;
     /* width: 95%; */
-    height:120px;
+    height:220px;
+    padding: 6px;
     color: black;
     /* border: 1px solid; */
     margin-top: 40px;
@@ -62,4 +64,10 @@
         justify-items: center;
         border-radius: 50%;
     }
+}
+.img_service{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    
 }

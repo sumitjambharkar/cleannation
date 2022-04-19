@@ -23,7 +23,7 @@
     top: 4;
     left: 0;
     width:100%;
-    color: red;
+    color:black;
     animation-name: logo;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -39,7 +39,7 @@
     }
     50%{
         width: 100%; 
-        color:red;
+        color:yellow;
       }
     100%{
         width: 0%; 

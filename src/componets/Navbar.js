@@ -6,6 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false)
+    
     return (
         <div>
             <nav className="navbar">

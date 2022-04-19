@@ -22,11 +22,16 @@ const Service = () => {
         return (
           <>
             <section class="text-gray-600 body-font">
-              <div class="container px-5 py-24 mx-auto">
+              <div class="container px-5 py-6 mx-auto">
                 <div
                   className={`main ${i % 2 === 0} ? "false":"" `}
                   class="flex flex-wrap -mx-4 -mb-10 text-center"
                 >
+                  <div class="sm:w-1/2 mb-10 px-4">
+                  <div className="img_service">
+                  <img className="image"  src={ele.image} alt="wash" />
+                  </div>
+                  </div>
                   <div class="sm:w-1/2 mb-10 px-4">
                     <h1 className="text-3xl text-purple-600 font-medium">
                       {ele.top_name}
@@ -50,11 +55,6 @@ const Service = () => {
                         CHECK NOW
                       </Button>
                     </Link>
-                  </div>
-                  <div class="sm:w-1/2 mb-10 px-4">
-                  <div>
-                  <img className="image"  src={ele.image} alt="wash" />
-                  </div>
                   </div>
                 </div>
               </div>

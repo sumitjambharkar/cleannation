@@ -30,16 +30,17 @@ ul li a{
 }
 @media screen and (max-width:780px) {
     .navbar{
-        
+        background-color: black;
         opacity:10;
         
     }
     .nav{
         display: none;
+        
     }
     .mobile_nav{
         display: block;
-        position: absolute;
+        position:absolute;
         list-style: none;
         background-color:black;
         left:0;
@@ -49,7 +50,7 @@ ul li a{
     }
     .mobile_menu_icon{
         display: block;
-        position: absolute;
+        position:absolute;
         
     }
     .mobile_menu{
