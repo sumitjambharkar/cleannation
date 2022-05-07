@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from "react";
+import { query, getDocs,collection } from "firebase/firestore";
 import "./Service.css";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import Image from '../image/team.jpg';
+import {db} from './firebase';
 
 const Service = () => {
   const [data, setData] = useState([]);
+  
 
-  useEffect(() => {
-    const getData = async () => {
-      const respone = await fetch("https://backendclean.herokuapp.com");
-      const data = await respone.json();
-      setData(data.result);
-    };
-    getData();
+  useEffect (() => {
+    // const getData = async () => {
+    //   const respone = await fetch("https://backendclean.herokuapp.com");
+    //   const data = await respone.json();
+    //   setData(data.result);
+    // };
+    // getData();
+    db.collection("services").onSnapshot((snapshot)=>{
+      setData(snapshot.docs.map((doc)=>({
+        id:doc.id,
+        data:doc.data()
+      })))
+    })
+    
+    
   }, []);
 
   return (
@@ -29,19 +40,18 @@ const Service = () => {
                 >
                   <div class="sm:w-1/2 mb-10 px-4">
                   <div className="img_service">
-                  <img className="image"  src={ele.image} alt="wash" />
+                  <img className="image"  src={ele.data.image} alt="wash" />
                   </div>
                   </div>
                   <div class="sm:w-1/2 mb-10 px-4">
                     <h1 className="text-3xl text-purple-600 font-medium">
-                      {ele.top_name}
+                      {ele.data.header}
                     </h1>
-                    <p className="p_tag text-2xl mt-2">Professional Service</p>
+                    <p className="p_tag text-2xl mt-2">{ele.data.title}</p>
                     <p className="mt-2">
-                      You will get professional service at affordable prices and
-                      according to you.
+                      {ele.data.descr}
                     </p>
-                    <Link to={`/${ele._id}`}>
+                    <Link to={`/${ele.id}`}>
                       <Button
                         style={{
                           marginTop: "1rem",

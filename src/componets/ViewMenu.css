@@ -1,0 +1,32 @@
+.bad h1 {
+    
+        width: 300px;
+        font-weight: 600;
+        font-size: 24px;
+        color: black;
+    
+}
+.price h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+}
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 480px)
+   {
+    .bad h1 {
+        width: 310px;
+        font-weight: 700;
+        font-size: 18px;
+        color: black;
+     
+    }
+    .price h1 {
+        font-weight: 600;
+        font-size: 18px;
+        color: black;
+    }
+    
+
+}
